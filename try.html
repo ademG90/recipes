@@ -4,30 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="script.js" defer></script>
     <style>
-      ul li {
-        list-style: inside georgian;
+      .big-box {
+        margin-left: 200px;
+        box-sizing: border-box;
+        height: 400px;
+        width: 400px;
+        border: 1px solid red;
       }
-
-      img {
+      .sml-box {
+        box-sizing: border-box;
+        height: 300px;
         width: 300px;
-        height: auto;
+        border: 5px solid rgb(0, 6, 128);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        /* margin-left: 50px; */
+        margin-right: -50px;
       }
     </style>
   </head>
   <body>
-    <ul>
-      <li><p>Lorem, ipsum dolor sit amet consectetur</p></li>
-      <li><p>que, quasi ipsam nihil maxime cumque incidunt.</p></li>
-      <li><p>que, quasi ipsam nihil maxime cumque incidunt.</p></li>
-      <li><p>voluptatibus officiis laudantium vitae dolorem ex ne</p></li>
-      <li>
-        <span
-          >adipisicing elit. Commodi quis suscipit quidem, eius nisi dicta odit
-          deserunt</span
-        >
-      </li>
-    </ul>
-    <img src="./img/small-ganfo.jpg" alt="small image" />
+    <div class="big-box"><div class="sml-box">small box</div></div>
   </body>
 </html>
